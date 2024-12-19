@@ -6,14 +6,22 @@ This project about a cart managment was generated using spring boot version 3. T
 Requirements:
 - JDK 23
 - Maven
+- PostgreSQL
 
-## Instalation
+## Instalation and configurarion
 
 Clone this repository and enter using cd, and then use
 
 ```bash
 mvn install
 ```
+Then, create a db in your postgresql named "creditcardsdb or you want, using db managment you want, but i recomend PGAdmin
+
+Also, you have to change the application.properties located in src/main/resources to your db credentials
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/creditcardsdb or you named before step
+spring.datasource.username=postgres
+spring.datasource.password={put your password db here}
 
 ## Development server
 
