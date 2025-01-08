@@ -10,11 +10,29 @@ Requirements:
 
 ## Instalation and configurarion
 
-Clone this repository and enter using cd, and then use
+Clone this repository
+
+You can set it up using 2 methods either docker (recommended) or manually.
+
+### Instalation using Docker
+
+You must install docker, for windows: https://docs.docker.com/desktop/setup/install/windows-install
+
+Enter to the project using cd, and execute:
+
+```bash
+docker-compose up --build
+```
+Once the server is running, open your browser or postman and navigate to `http://localhost:8080/`. 
+
+### Instalation using Docker
+
+Install meaven global, or use mvnw
 
 ```bash
 mvn install
 ```
+
 Then, create a db in your postgresql named "creditcardsdb or you want, using db managment you want, but i recomend PGAdmin
 
 Also, you have to change the application.properties located in src/main/resources to your db credentials
@@ -30,8 +48,6 @@ To start a local development server, run:
 ```bash
 mvn spring-boot:run
 ```
-
-
 Once the server is running, open your browser or postman and navigate to `http://localhost:8080/`. 
 
 ## Endpoints
