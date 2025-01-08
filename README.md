@@ -25,7 +25,8 @@ docker-compose up --build
 ```
 Once the server is running, open your browser or postman and navigate to `http://localhost:8080/`. 
 
-### Instalation using Docker
+
+### Instalation manually
 
 Install meaven global, or use mvnw
 
